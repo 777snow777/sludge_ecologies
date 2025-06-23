@@ -1,0 +1,184 @@
+
+#welcome{
+    padding-bottom: 1%;
+    background-color: black;
+    width: 100%;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height:fit-content
+}
+
+#header{
+    margin: 0 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about a {
+    color: rgb(249, 130, 79);
+    font-weight: 100;
+}
+
+#main{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    top: 25vh;
+    height: 90vh;
+    position: fixed;
+    left: 0;
+}
+
+
+.sludge-ecology{
+    /* color: rgb(255, 253, 253); */
+    z-index: 0;
+    opacity: 0.85;
+    padding:0;
+    overflow: scroll;
+    /* text-shadow: 2px 0 2px #3c357c81, -2px 0 2px rgb(63, 62, 120), 4px 0 3px #5a548dd7, -4px 0 3px rgba(91, 90, 146, 0.482), 0 1px 1px #a6a6a6b9; */
+}
+
+#body-bg{
+    width: 100%;;
+    background-image: url("rocks3.jpeg");
+    /* background-color: black; */
+    position: static;
+    overflow-x: scroll;
+    padding-bottom: 1%;
+    overflow-y: scroll;
+}
+
+#bg{
+    width: 100%;
+    /* display: flex; */
+    overflow: scroll;
+}
+#bg-img{
+    opacity: 0.1;
+    position: absolute;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 0;
+}
+
+.photo{
+    width: 100%;
+    z-index: 0;
+}
+
+#about{
+    padding: 1%;
+    overflow-y: scroll;
+    color: rgb(191, 190, 190);
+    font-size: 0.75em;;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+
+}
+
+#audio-1-outter{
+    position: fixed;
+    top: 10%;
+    left: 30%;
+}
+
+#intro-img{
+    z-index: 1;
+    width: 100%;
+}
+
+#archive{
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 0.8em;
+    height: 100%;
+    overflow: scroll;
+    list-style: none;
+    padding: 5%;
+}
+
+.selectedEcology{
+    height: fit-content;
+    background-color: #fff4e0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1% 2%;
+    z-index: 100;
+    padding: 2px;
+    font-size: 0.95em;
+    mix-blend-mode: lighten;
+    color: rgb(54, 1, 1);
+    text-align: center;
+ 
+}
+
+
+/* .selectedEcology{
+    overflow-y: scroll;
+    height: 100%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 5%;
+    font-size: 0.85em;
+    visibility: visible;
+    font-weight: 600;
+    position: relative;
+    z-index: 100;
+    overflow: scroll;
+
+} */
+
+#ecosystem_sounds{
+    position: absolute;
+    top: 6vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    z-index: 1;
+}
+
+
+#ecosystem{
+    justify-content: space-around;
+    width: 180%;
+    position: relative;
+    z-index: 100;
+    flex-wrap: wrap;
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 1%;
+}
+
+.selected-ecology-head a{
+    /* overflow: visible; */
+    padding: 1%;
+    z-index: 100;
+}
+
+h1{
+    color: white;
+    text-shadow: 0 2px 1px #372657, 0 -2px 1px rgb(47, 46, 124), 0 1px 1px #a6a6a6;
+    width: 100%;
+    z-index:1;
+}
+
+.hiddenEcology a{
+    color: #232a0a !important;
+
+}
+
+h1{
+    font-size: 1.2em;
+    text-shadow: 2px 0 2px #301d1dca,  1px 1px 2px #cea9a99c, -2px 0 1px #514737d7, 0 1px 1px #a6a6a6b9;
+    color: rgba(192, 192, 192, 0.396);
+    padding: 0;
+    margin: 0;
+
+}
