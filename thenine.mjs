@@ -66,6 +66,8 @@ function initializeEcosystem(results) {
         let wiki = document.createElement("a")
         let resultIndex = Math.floor(Math.random()*results.length)
         let species = results[resultIndex]
+        results[resultIndex]=results[results.length -1]
+        results.pop()
         if (species.taxon != null){
             let speciesName =""
             if (species.photos.length == 0 || species.taxon.name == null){
