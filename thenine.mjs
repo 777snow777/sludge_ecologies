@@ -1,16 +1,22 @@
-let maxiumimSize = 150
-const inatAPIobs = 'https://api.inaturalist.org/v1/observations?project_id=127096&order=desc&order_by=created_at&per_page=200';
+const perPage = 200
+const inatAPI = `https://api.inaturalist.org/v1/observations?project_id=127096&order=desc&order_by=created_at`
+const inatAPIobs = `https://api.inaturalist.org/v1/observations?project_id=127096&order=desc&order_by=created_at&per_page=${perPage}`;
 const inatAPIproj = 'https://api.inaturalist.org/v1/observations/species_counts?project_id=127096';
-
+let numPages = 1
 let cols = 30
 let ecologyW = 250
-let results
-let red
-let green 
-let blue
+
 window.onload = (ev) => {
-    fetchProjectInfo()
-    fetchEcologies()
+    fetch(inatAPI)
+    .then(response => response.json())
+    .then(data => {
+            let total_results = data.total_results
+            numPages = Math.floor(total_results/perPage)
+            fetchProjectInfo()
+            fetchEcologies()
+        }
+    )
+   
 
 }
 
@@ -28,7 +34,10 @@ function fetchProjectInfo() {
 
 
 function fetchEcologies() {
-    fetch(inatAPIobs)
+    let page = Math.floor(numPages*Math.random())+1
+    console.log(page)
+    let api = inatAPIobs + `&page=${page}`
+    fetch(api)
     .then(response => response.json())
     .then(data => {
         initializeEcosystem(data.results);

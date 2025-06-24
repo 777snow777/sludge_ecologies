@@ -119,6 +119,11 @@
  
 }
 
+#generate-btn{
+    color: black;
+    font-weight: 800;
+}
+
 
 /* .selectedEcology{
     overflow-y: scroll;
